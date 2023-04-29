@@ -1,0 +1,1181 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/aizquierdode_pec2#"
+     xml:base="https://w3id.org/def/aizquierdode_pec2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ontology="http://dbpedia.org/ontology/"
+     xmlns:dcmi-terms="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#"
+     xmlns:aizquierdode_pec2="https://w3id.org/def/aizquierdode_pec2#">
+    <owl:Ontology rdf:about="https://w3id.org/def/aizquierdode_pec2">
+        <owl:versionInfo>v0.0.1</owl:versionInfo>
+        <description>Ontology Wines Reviews including winery, wines, properties of wines, year of production.</description>
+        <title>aizquierdode_pec2</title>
+        <dcmi-terms:creator>Antonio Izquierdo Delgado</dcmi-terms:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#description -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#description"/>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#title -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#title"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#hasAcidity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#hasAcidity">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/aizquierdode_pec2#Acidity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#hasBody -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#hasBody">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/aizquierdode_pec2#Body"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#hasPopular -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#hasPopular">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/aizquierdode_pec2#Popular"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#hasProvince -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#hasProvince">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/WineRegion"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/aizquierdode_pec2#Province"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#hasRegion -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#hasRegion">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/WineRegion"/>
+        <rdfs:comment>A wine always belongs to a denomination of origin or region</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#isProducerOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#isProducerOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Winery"/>
+        <rdfs:comment>A wine is produced by a winery</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/abstract -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/abstract">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Standard field annotation</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/price -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/price">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Price of wine for year production</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/rating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/rating">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Valoration wine</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/year -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/year">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Year production wine</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#acidity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#acidity">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Acidity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#body -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#body">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Body"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#hasNumReviews -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/aizquierdode_pec2#hasNumReviews">
+        <rdfs:domain rdf:resource="https://w3id.org/def/aizquierdode_pec2#Popular"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Quantity valorations of wine</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country">
+        <rdfs:comment>Country of origin of the wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/WineRegion -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/WineRegion">
+        <rdfs:comment>geographic region of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Winery -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Winery">
+        <rdfs:comment>Wine Productor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Acidity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Acidity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Albarino -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Albarino">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#WhiteWine"/>
+        <rdfs:comment>It is a grape variety from Galicia,1 more specifically from the province of Pontevedra, where it is used to make white wine. His party, which brings together more than one hundred thousand people, is celebrated in Cambados, on the first Sunday of August.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Body -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Body">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#CabernetSauvignon -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#CabernetSauvignon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#RedWine"/>
+        <rdfs:comment>It is one of the best known red grapes in the world. It grows in almost all the major wine-growing areas, in a diverse spectrum of climates, from the Okanagan Valley (Canada) to the Bekaa Valley (Lebanon). Cabernet Sauvignon became famous for its presence in Bordeaux wine, where it is often blended with Merlot and Cabernet Franc. From France, the grape has spread across Europe and the New World, settling in the Santa Cruz Mountains of California, the Napa Valley, Hawkes Bay in New Zealand, the Margaret River and Coonawarra region of Australia, and the valleys Chileans from Maipo and Colchagua. For much of the 20th century, it was the most widely planted premium red wine grape in the world, until it was overtaken by Merlot in the 1990s.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Cava -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Cava">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Sparkling"/>
+        <rdfs:comment>type of sparkling wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Characteristics -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Characteristics"/>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Chardonnay -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Chardonnay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#WhiteWine"/>
+        <rdfs:comment>It is a green-skinned grape variety used to make white wine. It is native to the Burgundy wine-growing region of eastern France, but now grows everywhere wine is produced, from England to New Zealand. For new and developing wine regions it is seen as a &quot;rite of passage&quot; and an easy entry into the international wine market.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Grenache -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Grenache">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#RedWine"/>
+        <rdfs:comment>It is one of the most widely planted red wine grapes in the world.1 Garnacha is simply spoken of to refer to tinta or noir, although it has a series of relatives that are also widely distributed, highlighting white Garnacha, the peluda garnacha and the tintorera garnacha.2​
+
+Grenache ripens late, so it needs dry and warm conditions like those found in Spain, where it most likely originates. It also grows in Sardinia, in the south of France, in Australia, in the San Joaquin Valley of California and in Argentina in the province of Salta with soils similar to the French Rhône.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#HighAcidity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#HighAcidity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Acidity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#HighBody -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#HighBody">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Body"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#HighPopular -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#HighPopular">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Popular"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#LowAcidity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#LowAcidity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Acidity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#LowBody -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#LowBody">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Body"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#LowPopular -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#LowPopular">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Popular"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#MediumAcidity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#MediumAcidity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Acidity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#MediumBody -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#MediumBody">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Body"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#MediumPopular -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#MediumPopular">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Popular"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Mencia -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Mencia">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#RedWine"/>
+        <rdfs:comment>It is the name of a variety or breed of red grape introduced and cultivated mainly in the northwest of the Iberian Peninsula since the time of Ancient Rome. After recovering from the disaster of the phylloxera epidemic at the end of the 19th century, which caused a serious economic crisis in its traditional areas of cultivation, it is used to make aromatic and fruity wines, of intense color, and with the possibility of aging. It was considered for a time to be an adapted clone of the Cabernet Franc grape.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Monastrell -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Monastrell">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#RedWine"/>
+        <rdfs:comment>It is a red grape variety that grows in many regions of the world, including the Spanish Designations of Origin (DO) of Alicante, Yecla, Jumilla and Bullas, and the Balearic Islands, the French regions of the Rhône and Provence, the US states of California and Washington and the Australian regions of South Australia and New South Wales.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Other -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Other">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:comment>Subclass for special wines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#PedroXimenez -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#PedroXimenez">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#WhiteWine"/>
+        <rdfs:comment>It is a white grape variety that grows in various Spanish wine regions. It is the main grape of the Montilla-Moriles Denomination of Origin,1 in the province of Córdoba. In that DO it is used to produce a very sweet and very dark dessert wine. It is made by drying the grapes in the sun, which concentrates the sweetness. This creates a heavy, dark wine with flavors of raisins and molasses, which is fortified and aged in solera.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Popular -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Popular">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Province -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Province">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#RedWine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#RedWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:comment>Subclass of red wines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#RoseWine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#RoseWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:comment>Subclass of rose wines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#SauvignonBlanc -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#SauvignonBlanc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#WhiteWine"/>
+        <rdfs:comment>It is a greenish-skinned grape native to the Bordeaux region of France. The grape probably took its name from the French words sauvage (&quot;wild&quot;) and blanc (&quot;white&quot;), due to its primitive origins in southwestern France.1 It is possibly a descendant of savagnin. Sauvignon blanc is planted in many countries of the world. It produces a refreshing and dry monovarietal white wine. The grape is also a component of the famous dessert wines of the Sauternes and Barsac AOCs. Sauvignon blanc is widely cultivated in France, Italy, Spain, Argentina, Chile, Canada, Australia, New Zealand, South Africa, and the US states of Washington and California. Some New World Sauvignon Blanc wines, especially Californian ones, may also be called fumé blanc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Sherry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Sherry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Other"/>
+        <rdfs:comment>Subclass of sweet wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Sparkling -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Sparkling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Other"/>
+        <rdfs:comment>Subclass of sparkling wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Syrah -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Syrah">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#RedWine"/>
+        <rdfs:comment>It is a red grape that is grown all over the world and is mainly used to produce red wine. A 1999 DNA analysis found that Syrah was descended from two dark grapes from south-eastern France, dures and mondeuse blanche.1 Syrah should not be confused with petite sirah, which is a synonym for durif, a cross between syrah and peloursin dating from 1880.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Tempranillo -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Tempranillo">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#RedWine"/>
+        <rdfs:comment>It is a red grape variety cultivated extensively to produce full-bodied red wines1 in Spain, where it originates. It occupies a cultivated area of more than 214,000 ha in 2013, being the second in production, after the Airén (white) variety, and the first in red grapes. It has 31,046 hectares in the D.O. Rioja, which represents 61% of the D.O. Qualified Rioja, with a progressive increase in recent years to the detriment of other varieties. It is considered native to Rioja. It is the main grape used in this D.O., and is often referred to as the &quot;noble grape&quot; of Spain.2 Its name is short for early,1 which refers to the fact that it ripens several weeks before the largest part of the Spanish red grape varieties.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Verdejo -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Verdejo">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#WhiteWine"/>
+        <rdfs:comment>It is a white grape from Spain. It is the product of a cross between the traminer (also known as savagnin) and the white castellana.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#WhiteWine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#WhiteWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+        <rdfs:comment>Subclass of white wines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Wine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/aizquierdode_pec2#Wine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dbpedia.org/ontology/price"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dbpedia.org/ontology/year"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Parent for all wines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Acidity_2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/aizquierdode_pec2#Acidity_2">
+        <acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</acidity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Enrique_Mendoza -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/aizquierdode_pec2#Enrique_Mendoza"/>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Ribera_del_Duero -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/aizquierdode_pec2#Ribera_del_Duero">
+        <hasProvince rdf:resource="https://w3id.org/def/aizquierdode_pec2#Valladolid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Rioja -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/aizquierdode_pec2#Rioja"/>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Salamanca -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/aizquierdode_pec2#Salamanca"/>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Santa_Rosa -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/aizquierdode_pec2#Santa_Rosa">
+        <isProducerOf rdf:resource="https://w3id.org/def/aizquierdode_pec2#Enrique_Mendoza"/>
+        <ontology:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</ontology:rating>
+        <ontology:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</ontology:year>
+        <acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</acidity>
+        <body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</body>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">420</hasNumReviews>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/aizquierdode_pec2#Valladolid -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/aizquierdode_pec2#Valladolid"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#HighAcidity"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#LowAcidity"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#MediumAcidity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#HighBody"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#LowBody"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#MediumBody"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#HighPopular"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#LowPopular"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#MediumPopular"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#Other"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#RedWine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#RoseWine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/aizquierdode_pec2#WhiteWine"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#Acidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#acidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#MediumAcidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#Acidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#acidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#LowAcidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#isProducerOf"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#Wine"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://dbpedia.org/ontology/Winery"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#body"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#Body"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#MediumBody"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#body"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#Body"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#LowBody"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#body"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#Body"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#HighBody"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#Acidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#acidity"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/aizquierdode_pec2#HighAcidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

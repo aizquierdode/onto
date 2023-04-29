@@ -1,0 +1,179 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://dbpedia.org/ontology/abstract",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CabernetSauvignon" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#CabernetSauvignon"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Winery" : {
+      "@id" : "http://dbpedia.org/ontology/Winery"
+    },
+    "Popular" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Popular"
+    },
+    "Country" : {
+      "@id" : "http://dbpedia.org/ontology/Country"
+    },
+    "body" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#body",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "HighPopular" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#HighPopular"
+    },
+    "isProducerOf" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#isProducerOf",
+      "@type" : "@id"
+    },
+    "Mencia" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Mencia"
+    },
+    "Body" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Body"
+    },
+    "Syrah" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Syrah"
+    },
+    "hasNumReviews" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#hasNumReviews",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "HighAcidity" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#HighAcidity"
+    },
+    "PedroXimenez" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#PedroXimenez"
+    },
+    "LowPopular" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#LowPopular"
+    },
+    "hasAcidity" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#hasAcidity",
+      "@type" : "@id"
+    },
+    "MediumPopular" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#MediumPopular"
+    },
+    "Province" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Province"
+    },
+    "WineRegion" : {
+      "@id" : "http://dbpedia.org/ontology/WineRegion"
+    },
+    "creator" : {
+      "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator"
+    },
+    "Characteristics" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Characteristics"
+    },
+    "Monastrell" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Monastrell"
+    },
+    "Sherry" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Sherry"
+    },
+    "Grenache" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Grenache"
+    },
+    "hasProvince" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#hasProvince",
+      "@type" : "@id"
+    },
+    "hasBody" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#hasBody",
+      "@type" : "@id"
+    },
+    "MediumAcidity" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#MediumAcidity"
+    },
+    "acidity" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#acidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "SauvignonBlanc" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#SauvignonBlanc"
+    },
+    "WhiteWine" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#WhiteWine"
+    },
+    "HighBody" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#HighBody"
+    },
+    "title" : {
+      "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title"
+    },
+    "Tempranillo" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Tempranillo"
+    },
+    "year" : {
+      "@id" : "http://dbpedia.org/ontology/year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "LowAcidity" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#LowAcidity"
+    },
+    "RoseWine" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#RoseWine"
+    },
+    "Acidity" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Acidity"
+    },
+    "Verdejo" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Verdejo"
+    },
+    "MediumBody" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#MediumBody"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasPopular" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#hasPopular",
+      "@type" : "@id"
+    },
+    "price" : {
+      "@id" : "http://dbpedia.org/ontology/price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "rating" : {
+      "@id" : "http://dbpedia.org/ontology/rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "hasRegion" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#hasRegion",
+      "@type" : "@id"
+    },
+    "Other" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Other"
+    },
+    "Sparkling" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Sparkling"
+    },
+    "Cava" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Cava"
+    },
+    "Chardonnay" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Chardonnay"
+    },
+    "description" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#description"
+    },
+    "Albarino" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Albarino"
+    },
+    "LowBody" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#LowBody"
+    },
+    "RedWine" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#RedWine"
+    },
+    "Wine" : {
+      "@id" : "https://w3id.org/def/aizquierdode_pec2#Wine"
+    }
+  }
+}

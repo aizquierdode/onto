@@ -1,0 +1,640 @@
+<https://w3id.org/def/aizquierdode_pec2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/aizquierdode_pec2> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.1" .
+<https://w3id.org/def/aizquierdode_pec2> <https://w3id.org/def/aizquierdode_pec2#description> "Ontology Wines Reviews including winery, wines, properties of wines, year of production." .
+<https://w3id.org/def/aizquierdode_pec2> <https://w3id.org/def/aizquierdode_pec2#title> "aizquierdode_pec2" .
+<https://w3id.org/def/aizquierdode_pec2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator> "Antonio Izquierdo Delgado" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/aizquierdode_pec2#description
+<https://w3id.org/def/aizquierdode_pec2#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#title
+<https://w3id.org/def/aizquierdode_pec2#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/aizquierdode_pec2#hasAcidity
+<https://w3id.org/def/aizquierdode_pec2#hasAcidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/aizquierdode_pec2#hasAcidity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#hasAcidity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/aizquierdode_pec2#Acidity> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#hasBody
+<https://w3id.org/def/aizquierdode_pec2#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/aizquierdode_pec2#hasBody> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#hasBody> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/aizquierdode_pec2#Body> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#hasPopular
+<https://w3id.org/def/aizquierdode_pec2#hasPopular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/aizquierdode_pec2#hasPopular> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#hasPopular> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/aizquierdode_pec2#Popular> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#hasProvince
+<https://w3id.org/def/aizquierdode_pec2#hasProvince> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/aizquierdode_pec2#hasProvince> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/WineRegion> .
+<https://w3id.org/def/aizquierdode_pec2#hasProvince> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/aizquierdode_pec2#Province> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#hasRegion
+<https://w3id.org/def/aizquierdode_pec2#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/aizquierdode_pec2#hasRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#hasRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/WineRegion> .
+<https://w3id.org/def/aizquierdode_pec2#hasRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "A wine always belongs to a denomination of origin or region" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#isProducerOf
+<https://w3id.org/def/aizquierdode_pec2#isProducerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/aizquierdode_pec2#isProducerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/def/aizquierdode_pec2#isProducerOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#isProducerOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Winery> .
+<https://w3id.org/def/aizquierdode_pec2#isProducerOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A wine is produced by a winery" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/abstract
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "Standard field annotation" .
+# 
+# http://dbpedia.org/ontology/price
+<http://dbpedia.org/ontology/price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/price> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<http://dbpedia.org/ontology/price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://dbpedia.org/ontology/price> <http://www.w3.org/2000/01/rdf-schema#comment> "Price of wine for year production" .
+# 
+# http://dbpedia.org/ontology/rating
+<http://dbpedia.org/ontology/rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/rating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<http://dbpedia.org/ontology/rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://dbpedia.org/ontology/rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Valoration wine" .
+# 
+# http://dbpedia.org/ontology/year
+<http://dbpedia.org/ontology/year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/year> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<http://dbpedia.org/ontology/year> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://dbpedia.org/ontology/year> <http://www.w3.org/2000/01/rdf-schema#comment> "Year production wine" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#acidity
+<https://w3id.org/def/aizquierdode_pec2#acidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/aizquierdode_pec2#acidity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Acidity> .
+<https://w3id.org/def/aizquierdode_pec2#acidity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#body
+<https://w3id.org/def/aizquierdode_pec2#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/aizquierdode_pec2#body> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Body> .
+<https://w3id.org/def/aizquierdode_pec2#body> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#hasNumReviews
+<https://w3id.org/def/aizquierdode_pec2#hasNumReviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/aizquierdode_pec2#hasNumReviews> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/aizquierdode_pec2#Popular> .
+<https://w3id.org/def/aizquierdode_pec2#hasNumReviews> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/def/aizquierdode_pec2#hasNumReviews> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity valorations of wine" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country of origin of the wine" .
+# 
+# http://dbpedia.org/ontology/WineRegion
+<http://dbpedia.org/ontology/WineRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/WineRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "geographic region of wine" .
+# 
+# http://dbpedia.org/ontology/Winery
+<http://dbpedia.org/ontology/Winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Winery> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine Productor" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Acidity
+<https://w3id.org/def/aizquierdode_pec2#Acidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Acidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Characteristics> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Albarino
+<https://w3id.org/def/aizquierdode_pec2#Albarino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Albarino> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#WhiteWine> .
+<https://w3id.org/def/aizquierdode_pec2#Albarino> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a grape variety from Galicia,1 more specifically from the province of Pontevedra, where it is used to make white wine. His party, which brings together more than one hundred thousand people, is celebrated in Cambados, on the first Sunday of August." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Body
+<https://w3id.org/def/aizquierdode_pec2#Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Characteristics> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#CabernetSauvignon
+<https://w3id.org/def/aizquierdode_pec2#CabernetSauvignon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#CabernetSauvignon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#RedWine> .
+<https://w3id.org/def/aizquierdode_pec2#CabernetSauvignon> <http://www.w3.org/2000/01/rdf-schema#comment> "It is one of the best known red grapes in the world. It grows in almost all the major wine-growing areas, in a diverse spectrum of climates, from the Okanagan Valley (Canada) to the Bekaa Valley (Lebanon). Cabernet Sauvignon became famous for its presence in Bordeaux wine, where it is often blended with Merlot and Cabernet Franc. From France, the grape has spread across Europe and the New World, settling in the Santa Cruz Mountains of California, the Napa Valley, Hawkes Bay in New Zealand, the Margaret River and Coonawarra region of Australia, and the valleys Chileans from Maipo and Colchagua. For much of the 20th century, it was the most widely planted premium red wine grape in the world, until it was overtaken by Merlot in the 1990s." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Cava
+<https://w3id.org/def/aizquierdode_pec2#Cava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Cava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Sparkling> .
+<https://w3id.org/def/aizquierdode_pec2#Cava> <http://www.w3.org/2000/01/rdf-schema#comment> "type of sparkling wine" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Characteristics
+<https://w3id.org/def/aizquierdode_pec2#Characteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Chardonnay
+<https://w3id.org/def/aizquierdode_pec2#Chardonnay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Chardonnay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#WhiteWine> .
+<https://w3id.org/def/aizquierdode_pec2#Chardonnay> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a green-skinned grape variety used to make white wine. It is native to the Burgundy wine-growing region of eastern France, but now grows everywhere wine is produced, from England to New Zealand. For new and developing wine regions it is seen as a \"rite of passage\" and an easy entry into the international wine market." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Grenache
+<https://w3id.org/def/aizquierdode_pec2#Grenache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Grenache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#RedWine> .
+<https://w3id.org/def/aizquierdode_pec2#Grenache> <http://www.w3.org/2000/01/rdf-schema#comment> "It is one of the most widely planted red wine grapes in the world.1 Garnacha is simply spoken of to refer to tinta or noir, although it has a series of relatives that are also widely distributed, highlighting white Garnacha, the peluda garnacha and the tintorera garnacha.2​\n\nGrenache ripens late, so it needs dry and warm conditions like those found in Spain, where it most likely originates. It also grows in Sardinia, in the south of France, in Australia, in the San Joaquin Valley of California and in Argentina in the province of Salta with soils similar to the French Rhône." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#HighAcidity
+<https://w3id.org/def/aizquierdode_pec2#HighAcidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#HighAcidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Acidity> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#HighBody
+<https://w3id.org/def/aizquierdode_pec2#HighBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#HighBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Body> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#HighPopular
+<https://w3id.org/def/aizquierdode_pec2#HighPopular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#HighPopular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Popular> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#LowAcidity
+<https://w3id.org/def/aizquierdode_pec2#LowAcidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#LowAcidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Acidity> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#LowBody
+<https://w3id.org/def/aizquierdode_pec2#LowBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#LowBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Body> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#LowPopular
+<https://w3id.org/def/aizquierdode_pec2#LowPopular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#LowPopular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Popular> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#MediumAcidity
+<https://w3id.org/def/aizquierdode_pec2#MediumAcidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#MediumAcidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Acidity> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#MediumBody
+<https://w3id.org/def/aizquierdode_pec2#MediumBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#MediumBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Body> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#MediumPopular
+<https://w3id.org/def/aizquierdode_pec2#MediumPopular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#MediumPopular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Popular> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Mencia
+<https://w3id.org/def/aizquierdode_pec2#Mencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Mencia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#RedWine> .
+<https://w3id.org/def/aizquierdode_pec2#Mencia> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the name of a variety or breed of red grape introduced and cultivated mainly in the northwest of the Iberian Peninsula since the time of Ancient Rome. After recovering from the disaster of the phylloxera epidemic at the end of the 19th century, which caused a serious economic crisis in its traditional areas of cultivation, it is used to make aromatic and fruity wines, of intense color, and with the possibility of aging. It was considered for a time to be an adapted clone of the Cabernet Franc grape." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Monastrell
+<https://w3id.org/def/aizquierdode_pec2#Monastrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Monastrell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#RedWine> .
+<https://w3id.org/def/aizquierdode_pec2#Monastrell> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a red grape variety that grows in many regions of the world, including the Spanish Designations of Origin (DO) of Alicante, Yecla, Jumilla and Bullas, and the Balearic Islands, the French regions of the Rhône and Provence, the US states of California and Washington and the Australian regions of South Australia and New South Wales." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Other
+<https://w3id.org/def/aizquierdode_pec2#Other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Other> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#Other> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass for special wines" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#PedroXimenez
+<https://w3id.org/def/aizquierdode_pec2#PedroXimenez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#PedroXimenez> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#WhiteWine> .
+<https://w3id.org/def/aizquierdode_pec2#PedroXimenez> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a white grape variety that grows in various Spanish wine regions. It is the main grape of the Montilla-Moriles Denomination of Origin,1 in the province of Córdoba. In that DO it is used to produce a very sweet and very dark dessert wine. It is made by drying the grapes in the sun, which concentrates the sweetness. This creates a heavy, dark wine with flavors of raisins and molasses, which is fortified and aged in solera." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Popular
+<https://w3id.org/def/aizquierdode_pec2#Popular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Popular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Characteristics> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Province
+<https://w3id.org/def/aizquierdode_pec2#Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Province> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Country> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#RedWine
+<https://w3id.org/def/aizquierdode_pec2#RedWine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#RedWine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#RedWine> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass of red wines" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#RoseWine
+<https://w3id.org/def/aizquierdode_pec2#RoseWine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#RoseWine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#RoseWine> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass of rose wines" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#SauvignonBlanc
+<https://w3id.org/def/aizquierdode_pec2#SauvignonBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#SauvignonBlanc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#WhiteWine> .
+<https://w3id.org/def/aizquierdode_pec2#SauvignonBlanc> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a greenish-skinned grape native to the Bordeaux region of France. The grape probably took its name from the French words sauvage (\"wild\") and blanc (\"white\"), due to its primitive origins in southwestern France.1 It is possibly a descendant of savagnin. Sauvignon blanc is planted in many countries of the world. It produces a refreshing and dry monovarietal white wine. The grape is also a component of the famous dessert wines of the Sauternes and Barsac AOCs. Sauvignon blanc is widely cultivated in France, Italy, Spain, Argentina, Chile, Canada, Australia, New Zealand, South Africa, and the US states of Washington and California. Some New World Sauvignon Blanc wines, especially Californian ones, may also be called fumé blanc." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Sherry
+<https://w3id.org/def/aizquierdode_pec2#Sherry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Sherry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Other> .
+<https://w3id.org/def/aizquierdode_pec2#Sherry> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass of sweet wine" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Sparkling
+<https://w3id.org/def/aizquierdode_pec2#Sparkling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Sparkling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Other> .
+<https://w3id.org/def/aizquierdode_pec2#Sparkling> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass of sparkling wine" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Syrah
+<https://w3id.org/def/aizquierdode_pec2#Syrah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Syrah> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#RedWine> .
+<https://w3id.org/def/aizquierdode_pec2#Syrah> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a red grape that is grown all over the world and is mainly used to produce red wine. A 1999 DNA analysis found that Syrah was descended from two dark grapes from south-eastern France, dures and mondeuse blanche.1 Syrah should not be confused with petite sirah, which is a synonym for durif, a cross between syrah and peloursin dating from 1880." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Tempranillo
+<https://w3id.org/def/aizquierdode_pec2#Tempranillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Tempranillo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#RedWine> .
+<https://w3id.org/def/aizquierdode_pec2#Tempranillo> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a red grape variety cultivated extensively to produce full-bodied red wines1 in Spain, where it originates. It occupies a cultivated area of more than 214,000 ha in 2013, being the second in production, after the Airén (white) variety, and the first in red grapes. It has 31,046 hectares in the D.O. Rioja, which represents 61% of the D.O. Qualified Rioja, with a progressive increase in recent years to the detriment of other varieties. It is considered native to Rioja. It is the main grape used in this D.O., and is often referred to as the \"noble grape\" of Spain.2 Its name is short for early,1 which refers to the fact that it ripens several weeks before the largest part of the Spanish red grape varieties." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Verdejo
+<https://w3id.org/def/aizquierdode_pec2#Verdejo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Verdejo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#WhiteWine> .
+<https://w3id.org/def/aizquierdode_pec2#Verdejo> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a white grape from Spain. It is the product of a cross between the traminer (also known as savagnin) and the white castellana." .
+# 
+# https://w3id.org/def/aizquierdode_pec2#WhiteWine
+<https://w3id.org/def/aizquierdode_pec2#WhiteWine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#WhiteWine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+<https://w3id.org/def/aizquierdode_pec2#WhiteWine> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass of white wines" .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Wine
+<https://w3id.org/def/aizquierdode_pec2#Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/aizquierdode_pec2#Wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://dbpedia.org/ontology/price> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/aizquierdode_pec2#Wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://dbpedia.org/ontology/year> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/aizquierdode_pec2#Wine> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent for all wines" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/aizquierdode_pec2#Acidity_2
+<https://w3id.org/def/aizquierdode_pec2#Acidity_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/aizquierdode_pec2#Acidity_2> <https://w3id.org/def/aizquierdode_pec2#acidity> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Enrique_Mendoza
+<https://w3id.org/def/aizquierdode_pec2#Enrique_Mendoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Ribera_del_Duero
+<https://w3id.org/def/aizquierdode_pec2#Ribera_del_Duero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/aizquierdode_pec2#Ribera_del_Duero> <https://w3id.org/def/aizquierdode_pec2#hasProvince> <https://w3id.org/def/aizquierdode_pec2#Valladolid> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Rioja
+<https://w3id.org/def/aizquierdode_pec2#Rioja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Salamanca
+<https://w3id.org/def/aizquierdode_pec2#Salamanca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Santa_Rosa
+<https://w3id.org/def/aizquierdode_pec2#Santa_Rosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/aizquierdode_pec2#Santa_Rosa> <https://w3id.org/def/aizquierdode_pec2#isProducerOf> <https://w3id.org/def/aizquierdode_pec2#Enrique_Mendoza> .
+<https://w3id.org/def/aizquierdode_pec2#Santa_Rosa> <http://dbpedia.org/ontology/rating> "4.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/def/aizquierdode_pec2#Santa_Rosa> <http://dbpedia.org/ontology/year> "2017"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/def/aizquierdode_pec2#Santa_Rosa> <https://w3id.org/def/aizquierdode_pec2#acidity> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/def/aizquierdode_pec2#Santa_Rosa> <https://w3id.org/def/aizquierdode_pec2#body> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/def/aizquierdode_pec2#Santa_Rosa> <https://w3id.org/def/aizquierdode_pec2#hasNumReviews> "420"^^<http://www.w3.org/2001/XMLSchema#int> .
+# 
+# https://w3id.org/def/aizquierdode_pec2#Valladolid
+<https://w3id.org/def/aizquierdode_pec2#Valladolid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid3 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#MediumAcidity> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#LowAcidity> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#HighAcidity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#MediumBody> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#LowBody> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#HighBody> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid11 <http://www.w3.org/2002/07/owl#members> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#MediumPopular> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#LowPopular> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#HighPopular> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid15 <http://www.w3.org/2002/07/owl#members> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#WhiteWine> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#RoseWine> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#RedWine> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/aizquierdode_pec2#Other> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid20 <http://www.w3.org/2003/11/swrl#body> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#arguments> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> .
+<http://www.w3.org/2003/11/swrlb#equal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/aizquierdode_pec2#acidity> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#Acidity> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/2003/11/swrl#head> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#MediumAcidity> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid31 <http://www.w3.org/2003/11/swrl#body> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#arguments> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid37 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/aizquierdode_pec2#acidity> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid39 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#Acidity> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/2003/11/swrl#head> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid41 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#LowAcidity> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid42 <http://www.w3.org/2003/11/swrl#body> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid44 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#Wine> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i> .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid46 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/aizquierdode_pec2#isProducerOf> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/2003/11/swrl#head> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid48 <http://www.w3.org/2003/11/swrl#classPredicate> <http://dbpedia.org/ontology/Winery> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid49 <http://www.w3.org/2003/11/swrl#body> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#arguments> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid55 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#Body> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid57 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/aizquierdode_pec2#body> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/2003/11/swrl#head> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid59 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#MediumBody> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid60 <http://www.w3.org/2003/11/swrl#body> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#arguments> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid66 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#Body> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid68 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid68 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/aizquierdode_pec2#body> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://www.w3.org/2003/11/swrl#head> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid70 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#LowBody> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid71 <http://www.w3.org/2003/11/swrl#body> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid73 .
+_:genid73 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid73 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#Body> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/2003/11/swrl#arguments> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid79 .
+_:genid79 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid79 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid79 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/aizquierdode_pec2#body> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid71 <http://www.w3.org/2003/11/swrl#head> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid81 .
+_:genid81 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid81 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#HighBody> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid82 <http://www.w3.org/2003/11/swrl#body> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid84 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid84 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/aizquierdode_pec2#acidity> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid86 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#Acidity> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid88 .
+_:genid88 <http://www.w3.org/2003/11/swrl#arguments> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid82 <http://www.w3.org/2003/11/swrl#head> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
+_:genid92 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid92 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/aizquierdode_pec2#HighAcidity> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
