@@ -1,0 +1,37 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "aizquierdode_pec2:RoseWine" "aizquierdode_pec2:LowBody" "aizquierdode_pec2:HighBody" "aizquierdode_pec2:Grenache" "aizquierdode_pec2:MediumBody" "aizquierdode_pec2:SauvignonBlanc" "aizquierdode_pec2:Characteristics" "aizquierdode_pec2:Acidity" "aizquierdode_pec2:MediumAcidity" "aizquierdode_pec2:RedWine" "ontology:Country" "aizquierdode_pec2:CabernetSauvignon" "aizquierdode_pec2:Other" "aizquierdode_pec2:Wine" "aizquierdode_pec2:Syrah" "aizquierdode_pec2:MediumPopular" "aizquierdode_pec2:Sherry" "aizquierdode_pec2:Albarino" "aizquierdode_pec2:Province" "aizquierdode_pec2:PedroXimenez" "aizquierdode_pec2:Chardonnay" "aizquierdode_pec2:LowPopular" "aizquierdode_pec2:WhiteWine" "aizquierdode_pec2:Body" "aizquierdode_pec2:Mencia" "aizquierdode_pec2:Popular" "aizquierdode_pec2:HighPopular" "aizquierdode_pec2:HighAcidity" "aizquierdode_pec2:Cava" "aizquierdode_pec2:Verdejo" "aizquierdode_pec2:Sparkling" "aizquierdode_pec2:Monastrell" "aizquierdode_pec2:LowAcidity" "aizquierdode_pec2:Tempranillo" ; /*classes style*/
+	"aizquierdode_pec2:HighPopular" -> "aizquierdode_pec2:Popular" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Mencia" -> "aizquierdode_pec2:RedWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:LowPopular" -> "aizquierdode_pec2:Popular" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:WhiteWine" -> "aizquierdode_pec2:Wine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Popular" -> "aizquierdode_pec2:Characteristics" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Province" -> "ontology:Country" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:CabernetSauvignon" -> "aizquierdode_pec2:RedWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Tempranillo" -> "aizquierdode_pec2:RedWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Other" -> "aizquierdode_pec2:Wine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:MediumBody" -> "aizquierdode_pec2:Body" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Verdejo" -> "aizquierdode_pec2:WhiteWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:HighAcidity" -> "aizquierdode_pec2:Acidity" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:LowAcidity" -> "aizquierdode_pec2:Acidity" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Acidity" -> "aizquierdode_pec2:Characteristics" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:MediumPopular" -> "aizquierdode_pec2:Popular" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Cava" -> "aizquierdode_pec2:Sparkling" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:PedroXimenez" -> "aizquierdode_pec2:WhiteWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:LowBody" -> "aizquierdode_pec2:Body" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:RoseWine" -> "aizquierdode_pec2:Wine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Sparkling" -> "aizquierdode_pec2:Other" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Monastrell" -> "aizquierdode_pec2:RedWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Chardonnay" -> "aizquierdode_pec2:WhiteWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:RedWine" -> "aizquierdode_pec2:Wine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Body" -> "aizquierdode_pec2:Characteristics" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:MediumAcidity" -> "aizquierdode_pec2:Acidity" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:HighBody" -> "aizquierdode_pec2:Body" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Albarino" -> "aizquierdode_pec2:WhiteWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Sherry" -> "aizquierdode_pec2:Other" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:SauvignonBlanc" -> "aizquierdode_pec2:WhiteWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Grenache" -> "aizquierdode_pec2:RedWine" [ label = "rdfs:subClassOf" ];
+	"aizquierdode_pec2:Syrah" -> "aizquierdode_pec2:RedWine" [ label = "rdfs:subClassOf" ];
+
+}

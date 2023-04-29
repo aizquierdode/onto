@@ -1,0 +1,674 @@
+@prefix : <https://w3id.org/def/aizquierdode_pec2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/aizquierdode_pec2#> .
+
+<https://w3id.org/def/aizquierdode_pec2> rdf:type owl:Ontology ;
+                                          owl:versionInfo "v0.0.1" ;
+                                          :description "Ontology Wines Reviews including winery, wines, properties of wines, year of production." ;
+                                          :title "aizquierdode_pec2" ;
+                                          <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator> "Antonio Izquierdo Delgado" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/def/aizquierdode_pec2#description
+:description rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#title
+:title rdf:type owl:AnnotationProperty .
+
+
+###  https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/def/aizquierdode_pec2#hasAcidity
+:hasAcidity rdf:type owl:ObjectProperty ;
+            rdfs:domain :Wine ;
+            rdfs:range :Acidity .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#hasBody
+:hasBody rdf:type owl:ObjectProperty ;
+         rdfs:domain :Wine ;
+         rdfs:range :Body .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#hasPopular
+:hasPopular rdf:type owl:ObjectProperty ;
+            rdfs:domain :Wine ;
+            rdfs:range :Popular .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#hasProvince
+:hasProvince rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://dbpedia.org/ontology/WineRegion> ;
+             rdfs:range :Province .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#hasRegion
+:hasRegion rdf:type owl:ObjectProperty ;
+           rdfs:domain :Wine ;
+           rdfs:range <http://dbpedia.org/ontology/WineRegion> ;
+           rdfs:comment "A wine always belongs to a denomination of origin or region" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#isProducerOf
+:isProducerOf rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Wine ;
+              rdfs:range <http://dbpedia.org/ontology/Winery> ;
+              rdfs:comment "A wine is produced by a winery" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://dbpedia.org/ontology/abstract
+<http://dbpedia.org/ontology/abstract> rdf:type owl:DatatypeProperty ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "Standard field annotation" .
+
+
+###  http://dbpedia.org/ontology/price
+<http://dbpedia.org/ontology/price> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain :Wine ;
+                                    rdfs:range xsd:float ;
+                                    rdfs:comment "Price of wine for year production" .
+
+
+###  http://dbpedia.org/ontology/rating
+<http://dbpedia.org/ontology/rating> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :Wine ;
+                                     rdfs:range xsd:float ;
+                                     rdfs:comment "Valoration wine" .
+
+
+###  http://dbpedia.org/ontology/year
+<http://dbpedia.org/ontology/year> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :Wine ;
+                                   rdfs:range xsd:int ;
+                                   rdfs:comment "Year production wine" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#acidity
+:acidity rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Acidity ;
+         rdfs:range xsd:int .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#body
+:body rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Body ;
+      rdfs:range xsd:int .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#hasNumReviews
+:hasNumReviews rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Popular ;
+               rdfs:range xsd:int ;
+               rdfs:comment "Quantity valorations of wine" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> rdf:type owl:Class ;
+                                      rdfs:comment "Country of origin of the wine" .
+
+
+###  http://dbpedia.org/ontology/WineRegion
+<http://dbpedia.org/ontology/WineRegion> rdf:type owl:Class ;
+                                         rdfs:comment "geographic region of wine" .
+
+
+###  http://dbpedia.org/ontology/Winery
+<http://dbpedia.org/ontology/Winery> rdf:type owl:Class ;
+                                     rdfs:comment "Wine Productor" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Acidity
+:Acidity rdf:type owl:Class ;
+         rdfs:subClassOf :Characteristics .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Albarino
+:Albarino rdf:type owl:Class ;
+          rdfs:subClassOf :WhiteWine ;
+          rdfs:comment "It is a grape variety from Galicia,1 more specifically from the province of Pontevedra, where it is used to make white wine. His party, which brings together more than one hundred thousand people, is celebrated in Cambados, on the first Sunday of August." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Body
+:Body rdf:type owl:Class ;
+      rdfs:subClassOf :Characteristics .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#CabernetSauvignon
+:CabernetSauvignon rdf:type owl:Class ;
+                   rdfs:subClassOf :RedWine ;
+                   rdfs:comment "It is one of the best known red grapes in the world. It grows in almost all the major wine-growing areas, in a diverse spectrum of climates, from the Okanagan Valley (Canada) to the Bekaa Valley (Lebanon). Cabernet Sauvignon became famous for its presence in Bordeaux wine, where it is often blended with Merlot and Cabernet Franc. From France, the grape has spread across Europe and the New World, settling in the Santa Cruz Mountains of California, the Napa Valley, Hawkes Bay in New Zealand, the Margaret River and Coonawarra region of Australia, and the valleys Chileans from Maipo and Colchagua. For much of the 20th century, it was the most widely planted premium red wine grape in the world, until it was overtaken by Merlot in the 1990s." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Cava
+:Cava rdf:type owl:Class ;
+      rdfs:subClassOf :Sparkling ;
+      rdfs:comment "type of sparkling wine" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Characteristics
+:Characteristics rdf:type owl:Class .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Chardonnay
+:Chardonnay rdf:type owl:Class ;
+            rdfs:subClassOf :WhiteWine ;
+            rdfs:comment "It is a green-skinned grape variety used to make white wine. It is native to the Burgundy wine-growing region of eastern France, but now grows everywhere wine is produced, from England to New Zealand. For new and developing wine regions it is seen as a \"rite of passage\" and an easy entry into the international wine market." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Grenache
+:Grenache rdf:type owl:Class ;
+          rdfs:subClassOf :RedWine ;
+          rdfs:comment """It is one of the most widely planted red wine grapes in the world.1 Garnacha is simply spoken of to refer to tinta or noir, although it has a series of relatives that are also widely distributed, highlighting white Garnacha, the peluda garnacha and the tintorera garnacha.2​
+
+Grenache ripens late, so it needs dry and warm conditions like those found in Spain, where it most likely originates. It also grows in Sardinia, in the south of France, in Australia, in the San Joaquin Valley of California and in Argentina in the province of Salta with soils similar to the French Rhône.""" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#HighAcidity
+:HighAcidity rdf:type owl:Class ;
+             rdfs:subClassOf :Acidity .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#HighBody
+:HighBody rdf:type owl:Class ;
+          rdfs:subClassOf :Body .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#HighPopular
+:HighPopular rdf:type owl:Class ;
+             rdfs:subClassOf :Popular .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#LowAcidity
+:LowAcidity rdf:type owl:Class ;
+            rdfs:subClassOf :Acidity .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#LowBody
+:LowBody rdf:type owl:Class ;
+         rdfs:subClassOf :Body .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#LowPopular
+:LowPopular rdf:type owl:Class ;
+            rdfs:subClassOf :Popular .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#MediumAcidity
+:MediumAcidity rdf:type owl:Class ;
+               rdfs:subClassOf :Acidity .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#MediumBody
+:MediumBody rdf:type owl:Class ;
+            rdfs:subClassOf :Body .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#MediumPopular
+:MediumPopular rdf:type owl:Class ;
+               rdfs:subClassOf :Popular .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Mencia
+:Mencia rdf:type owl:Class ;
+        rdfs:subClassOf :RedWine ;
+        rdfs:comment "It is the name of a variety or breed of red grape introduced and cultivated mainly in the northwest of the Iberian Peninsula since the time of Ancient Rome. After recovering from the disaster of the phylloxera epidemic at the end of the 19th century, which caused a serious economic crisis in its traditional areas of cultivation, it is used to make aromatic and fruity wines, of intense color, and with the possibility of aging. It was considered for a time to be an adapted clone of the Cabernet Franc grape." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Monastrell
+:Monastrell rdf:type owl:Class ;
+            rdfs:subClassOf :RedWine ;
+            rdfs:comment "It is a red grape variety that grows in many regions of the world, including the Spanish Designations of Origin (DO) of Alicante, Yecla, Jumilla and Bullas, and the Balearic Islands, the French regions of the Rhône and Provence, the US states of California and Washington and the Australian regions of South Australia and New South Wales." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Other
+:Other rdf:type owl:Class ;
+       rdfs:subClassOf :Wine ;
+       rdfs:comment "Subclass for special wines" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#PedroXimenez
+:PedroXimenez rdf:type owl:Class ;
+              rdfs:subClassOf :WhiteWine ;
+              rdfs:comment "It is a white grape variety that grows in various Spanish wine regions. It is the main grape of the Montilla-Moriles Denomination of Origin,1 in the province of Córdoba. In that DO it is used to produce a very sweet and very dark dessert wine. It is made by drying the grapes in the sun, which concentrates the sweetness. This creates a heavy, dark wine with flavors of raisins and molasses, which is fortified and aged in solera." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Popular
+:Popular rdf:type owl:Class ;
+         rdfs:subClassOf :Characteristics .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Province
+:Province rdf:type owl:Class ;
+          rdfs:subClassOf <http://dbpedia.org/ontology/Country> .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#RedWine
+:RedWine rdf:type owl:Class ;
+         rdfs:subClassOf :Wine ;
+         rdfs:comment "Subclass of red wines" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#RoseWine
+:RoseWine rdf:type owl:Class ;
+          rdfs:subClassOf :Wine ;
+          rdfs:comment "Subclass of rose wines" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#SauvignonBlanc
+:SauvignonBlanc rdf:type owl:Class ;
+                rdfs:subClassOf :WhiteWine ;
+                rdfs:comment "It is a greenish-skinned grape native to the Bordeaux region of France. The grape probably took its name from the French words sauvage (\"wild\") and blanc (\"white\"), due to its primitive origins in southwestern France.1 It is possibly a descendant of savagnin. Sauvignon blanc is planted in many countries of the world. It produces a refreshing and dry monovarietal white wine. The grape is also a component of the famous dessert wines of the Sauternes and Barsac AOCs. Sauvignon blanc is widely cultivated in France, Italy, Spain, Argentina, Chile, Canada, Australia, New Zealand, South Africa, and the US states of Washington and California. Some New World Sauvignon Blanc wines, especially Californian ones, may also be called fumé blanc." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Sherry
+:Sherry rdf:type owl:Class ;
+        rdfs:subClassOf :Other ;
+        rdfs:comment "Subclass of sweet wine" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Sparkling
+:Sparkling rdf:type owl:Class ;
+           rdfs:subClassOf :Other ;
+           rdfs:comment "Subclass of sparkling wine" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Syrah
+:Syrah rdf:type owl:Class ;
+       rdfs:subClassOf :RedWine ;
+       rdfs:comment "It is a red grape that is grown all over the world and is mainly used to produce red wine. A 1999 DNA analysis found that Syrah was descended from two dark grapes from south-eastern France, dures and mondeuse blanche.1 Syrah should not be confused with petite sirah, which is a synonym for durif, a cross between syrah and peloursin dating from 1880." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Tempranillo
+:Tempranillo rdf:type owl:Class ;
+             rdfs:subClassOf :RedWine ;
+             rdfs:comment "It is a red grape variety cultivated extensively to produce full-bodied red wines1 in Spain, where it originates. It occupies a cultivated area of more than 214,000 ha in 2013, being the second in production, after the Airén (white) variety, and the first in red grapes. It has 31,046 hectares in the D.O. Rioja, which represents 61% of the D.O. Qualified Rioja, with a progressive increase in recent years to the detriment of other varieties. It is considered native to Rioja. It is the main grape used in this D.O., and is often referred to as the \"noble grape\" of Spain.2 Its name is short for early,1 which refers to the fact that it ripens several weeks before the largest part of the Spanish red grape varieties." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Verdejo
+:Verdejo rdf:type owl:Class ;
+         rdfs:subClassOf :WhiteWine ;
+         rdfs:comment "It is a white grape from Spain. It is the product of a cross between the traminer (also known as savagnin) and the white castellana." .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#WhiteWine
+:WhiteWine rdf:type owl:Class ;
+           rdfs:subClassOf :Wine ;
+           rdfs:comment "Subclass of white wines" .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Wine
+:Wine rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://dbpedia.org/ontology/price> ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:float
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://dbpedia.org/ontology/year> ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:int
+                      ] ;
+      rdfs:comment "Parent for all wines" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/aizquierdode_pec2#Acidity_2
+:Acidity_2 rdf:type owl:NamedIndividual ;
+           :acidity "2"^^xsd:int .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Enrique_Mendoza
+:Enrique_Mendoza rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Ribera_del_Duero
+:Ribera_del_Duero rdf:type owl:NamedIndividual ;
+                  :hasProvince :Valladolid .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Rioja
+:Rioja rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Salamanca
+:Salamanca rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Santa_Rosa
+:Santa_Rosa rdf:type owl:NamedIndividual ;
+            :isProducerOf :Enrique_Mendoza ;
+            <http://dbpedia.org/ontology/rating> 4.2 ;
+            <http://dbpedia.org/ontology/year> "2017"^^xsd:int ;
+            :acidity "3"^^xsd:int ;
+            :body "4"^^xsd:int ;
+            :hasNumReviews "420"^^xsd:int .
+
+
+###  https://w3id.org/def/aizquierdode_pec2#Valladolid
+:Valladolid rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HighAcidity
+                :LowAcidity
+                :MediumAcidity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HighBody
+                :LowBody
+                :MediumBody
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HighPopular
+                :LowPopular
+                :MediumPopular
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Other
+                :RedWine
+                :RoseWine
+                :WhiteWine
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Acidity ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :acidity ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#s> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 3 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MediumAcidity ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Acidity ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :acidity ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#s> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 3 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :LowAcidity ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isProducerOf ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://dbpedia.org/ontology/Winery> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :body ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Body ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#s> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 3 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MediumBody ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :body ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Body ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#s> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 3 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :LowBody ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :body ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#s> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 3 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Body ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HighBody ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <urn:swrl:var#s> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 3 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Acidity ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :acidity ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HighAcidity ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
